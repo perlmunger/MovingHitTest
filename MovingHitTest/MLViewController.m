@@ -21,7 +21,6 @@
   CGPoint endPoint = CGPointMake([[self view] bounds].size.width, [[self view] bounds].size.height);
   
   CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-  animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
   animation.fromValue = [NSValue valueWithCGPoint:[[_imageView layer] position]];
   animation.toValue = [NSValue valueWithCGPoint:endPoint];
   animation.duration = 30.0f;
